@@ -117,7 +117,7 @@ class _HomeState extends State<Home> {
     } else {
       results = todosList
           .where(
-            (item) => item.todoText!.toLowerCase().contains(
+            (item) => item.todoText.toLowerCase().contains(
               enteredKeyword.toLowerCase(),
             ),
           )
